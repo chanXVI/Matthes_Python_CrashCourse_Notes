@@ -1,0 +1,24 @@
+# Intergers, Floars, Underscores, Multiple Assignment
+print(2+3)
+print(3-2)
+print(2*3)
+print(10/5)
+print(10%5)
+
+print(3**3)
+print(10**9)
+
+print(2 +(3*4))
+million = 1_000_000
+print(million)
+
+x, y, z = 4, 12, 15
+print(x)
+print(x+z)
+#END
+
+# Constants - variable whose value stays the same throughout the life of the program
+#variables are written in all caps to represent a constant
+
+MAX_CONNECTIONS = 5000
+#END
