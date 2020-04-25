@@ -91,5 +91,104 @@
 # top_QB.remove(too_old)
 # print(top_QB)
 # print(f"\n{too_old.title()} is too old to be considered a current top 5 QB.")
+##################################################################
 
-# #Finish Page 42 try it yourself
+# # Try it Yourself
+# # 3-4
+# guest_list = ['ghandi', 'einstein', 'jordan']
+# print(f'{guest_list[0].title()}, you have been invited to attend the\
+#  most prestigious dinner featuring individuals who haved shaped our\
+#   world to what it is today')
+
+# print(f'{guest_list[1].title()}, you have been invited to attend the\
+#  most prestigious dinner\nfeaturing individuals who haved shaped our\
+#   world to what it is today')
+
+# print(f'{guest_list[2].title()}, you have been invited to attend the\
+#  most prestigious dinner\n\tfeaturing individuals who haved shaped our\
+#   world to what it is today')
+
+# # 3-5
+# print(guest_list)
+# unable_to_attend = guest_list.pop(1)
+# print(guest_list)
+# print(f'\n{unable_to_attend.upper()} is unable to attend the party :(')
+# print(guest_list)
+# guest_list[1] = 'edison'
+# print(guest_list)
+# guest_list.append('tesla')
+# print(guest_list)
+
+# print(f'{guest_list[0].upper()}, this is the final invite to the party')
+
+# print(f'{guest_list[1].upper()}, this is the final invite to the party')
+
+# print(f'{guest_list[2].upper()}, this is the final invite to the party')
+
+# # 3-6
+# print (' A bigger dinner table has been found')
+# guest_list.insert(0, 'Gates')
+# guest_list.insert(2, 'Buffet')
+# guest_list.append('Churchhill')
+
+# print(f'{guest_list[0].upper()}, this is the FINAL invite to the party')
+# print(f'{guest_list[1].upper()}, this is the FINAL invite to the party')
+# print(f'{guest_list[2].upper()}, this is the FINAL invite to the party')
+# print(f'{guest_list[3].upper()}, this is the FINAL invite to the party')
+# print(f'{guest_list[4].upper()}, this is the FINAL invite to the party')
+# print(f'{guest_list[5].upper()}, this is the FINAL invite to the party')
+
+# # 3-7
+
+# print ('\n Unfortunately the new table won"t arrive in time therefore only\
+#  two invitees can attend :( ')
+# church = guest_list.pop()
+# print(f'{church.title()}, you are never invited brotha!!')
+# print(guest_list)
+
+# church = guest_list.pop()
+# print(f'{church.title()}, you are never invited brotha!!')
+# print(guest_list)
+
+# church = guest_list.pop()
+# print(f'{church.title()}, you are never invited brotha!!')
+# print(guest_list)
+
+# church = guest_list.pop()
+# print(f'{church.title()}, you are never invited brotha!!')
+# print(guest_list)
+
+# print(f'\n{guest_list[0].upper()}, You still invited!')
+# print(f'{guest_list[1].upper()}, You still invited!')
+
+# del guest_list[0]
+# print(guest_list)
+
+# del guest_list[0]
+# print(guest_list)
+# #######################################################################
+
+# # Organizing a list
+# cars = ['bmw', 'audi', 'toyota', 'subaru']
+# cars.sort()
+# print(cars)
+
+# cars = ['bmw', 'audi', 'toyota', 'subaru']
+# cars.sort(reverse = True)
+# print(cars)
+
+# print(len(cars))
+
+# cars.reverse()
+# print(cars)
+
+# print("Here is the original list:")
+# cars.append('lambo')
+# print(cars)
+
+# print("\nHere is the sorted list:")
+# print(sorted(cars))
+
+# print("\nHere is the original list again:")
+# print(cars)
+# #############################################################
