@@ -1,20 +1,70 @@
-# Working with lists
+# # Working with lists
 
-# Looping through an entire list
-nfl_teams = ['bears', 'raiders', 'jets', 'giants']
-for team in nfl_teams:
-    print(team)
+# # Looping through an entire list
+# nfl_teams = ['bears', 'raiders', 'jets', 'giants']
+# for team in nfl_teams:
+#     print(team)
 
-for team in nfl_teams:
-    print(f'{team.title()}, will probably not make the playoffs this year.')
-    print(f'Therefore {team.upper()} will most likely get a high draft pick next year.\n')
+# for team in nfl_teams:
+#     print(f'{team.title()}, will probably not make the playoffs this year.')
+#     print(f'Therefore {team.upper()} will most likely get a high draft pick next year.\n')
 
-print('The teams above will tank for the first four picks :(')
+# print('The teams above will tank for the first four picks :(')
+# # # Try it Yourself 
+# # 4-1
+# top_pizza_flavors = ['pepporoni', 'cheese', 'sausage']
+# for pizza in top_pizza_flavors:
+# 	print(f'I like {pizza.upper()} pizza.\n')
 
-######################################################################################################
-# Page 56: Try it yourself!!!
-# Add PORTIONS FROM MACBOOK PRO
-######################################################################################################
+# print('These are my favorite pizza flavors.')
+
+# #4-2
+# pets = ['dog', 'cat', 'rabbit']
+
+# for pet in pets:
+# 	print(f'\nA {pet.title()} would make a great pet.')
+
+# print('\nAny of these animals would make a great pet!')
+# ###################################################################
+
+# # Using range function
+# for num in range(1,6):
+# 	print(num)
+
+# # Using range() to make a list of numbers
+# numbers = list(range(0,6))
+# print(numbers)
+
+# even_numbers = list(range(2,11,2))
+# print(even_numbers)
+
+# ##########################################
+# squares = []
+# for num in range(1, 11):
+# 	square = num ** 2
+# 	squares.append(square)
+
+# print(squares)
+
+# # can also write the code above more concisely
+# squares = []
+# for value in range(1,11):
+# 	squares.append(value**2)
+
+# print(squares)
+
+# # list comprehension , helps do the same action (create and append) in one single line
+# squidward = [x**2 for x in range(1,11)]
+# print('\n',squidward)
+
+
+# # simple stats with a list of numbers
+
+# digits = [1,2,3,4,5,6,7,8,9,0]
+
+# print(f'\n{min(digits)}\n')
+# print(f'{max(digits)}\n')
+# print(f'{sum(digits)}')
 
 # # Try it yourself
 # # 4-3
