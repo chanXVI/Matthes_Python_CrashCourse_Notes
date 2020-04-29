@@ -96,3 +96,91 @@
 # 	print(f'I really love {fruit.upper()}.')
 # else:
 # 	print(f"I don't really like {fruit.title()}.")
+
+# # toppings.py
+# requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+# for requested_topping in requested_toppings:
+# 	if requested_topping == 'green peppers':
+# 		print("Sorry we are out of green peppers right now.")
+# 	else:
+# 		print(f"Adding {requested_topping}.")
+
+# print("\nFinished making your pizza.")
+# #########################################
+# requested_toppings = ['bacon', 'sausage', 'peppers']
+# #########################################
+# requested_toppings = []
+
+# if requested_toppings:
+# 	for requested_topping in requested_toppings:
+# 		print(f"Adding {requested_topping}.") 
+# 	print("\nFinished making your pizza!")
+# else:
+# 	print("Are you sure you want a plain pizza?")
+
+# # Using Multiple Lists
+# available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni','\
+# pineapple', 'extra cheese']
+
+# requested_toppings = ['mushrooms', 'french fries', 'pineapple']
+
+# for requested_topping in requested_toppings:
+# 	if requested_topping in available_toppings:
+# 		print(f"Adding {requested_topping.title()}")
+# 	else:
+# 		print(f"Sorry we don't have {requested_topping.upper()}.")
+# print("\nFinished making your pizza!")
+
+# # 5-8
+# usernames = ['john', 'ryAn186', 'Admin', 'jsmOove', 'chriscarter']\
+# # 5-9
+# usernames = []
+# if usernames:
+# 	for user in usernames:
+# 		if user.lower() == 'admin':
+# 			print (f"Hello {user.upper()}, would you like to see a status report? ")
+# 		else:
+# 			print(f"Hello {user}, thank you for logging in again.")
+# else:
+# 	print ("We need to find some users!")
+
+# # 5-10
+# current_users = ['jomboy', 'rayallen20', 'dwade3', 'UD40', 'lDON77', 'Bron6']
+
+# new_users = ['ad3', 'Bron6', 'iverson3', 'shaq34', 'UD40']
+
+# for user in new_users:
+# 	if user in current_users:
+# 		print(f"Username {user} has already been used.\n\
+# Please try a different one :(\n") 
+# 	else:
+# 		print(f"Username {user} is available!\n")
+
+# # 5-10 taking case sensitive letter into account 
+# current_users = ['jomboy', 'rayallen20', 'dwade3', 'UD40', 'lDON77', 'Bron6']
+
+# for x in range(len(current_users)):
+# 	current_users[x] = current_users[x].lower()
+
+# new_users = ['ad3', 'BRON6', 'iverson3', 'shaq34', 'ud40']
+
+# for user in new_users:
+# 	if user.lower() in current_users:
+# 		print(f"Username {user} has already been used.\n\
+# Please try a different one :(\n") 
+# 	else:
+# 		print(f"Username {user} is available!\n")
+
+# # 5-11
+# num_list = [num for num in range(1,10)]
+
+# for value in num_list:
+# 	if value == 1:
+# 		print(f"{value}st\n")
+# 	elif value == 2:
+# 		print(f"{value}nd\n")
+# 	elif value == 3:
+# 		print(f"{value}rd\n")
+# 	else:
+# 		print(f"{value}th\n")
