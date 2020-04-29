@@ -46,9 +46,9 @@
 #     print(f"{team.title()} are in the NFC north.")
 # else:
 #     print (f"The {team.upper()} are not in the nfc north division.")
-
-# # 5-3 
-# alien_color = ['green', 'yellow', 'red']
+#
+# # 5-3, 5-4, 5-5
+# alien_color = ['green', 'yellow', 'red', 'yellow']
 
 # color = 'GREEN'
 
@@ -57,3 +57,42 @@
 
 # else:
 #     print('Not one of the colors.')
+
+
+# color = 'YeLLow'
+
+# if color.lower() in alien_color:
+# 	if color.lower() == 'green':
+# 		print('You have earned five points.')
+# 	elif color.lower() == 'yellow':
+# 		print('You have earned 10 points.')
+# 	elif color.lower() == 'red':
+# 		print('You have earned 15 points.')
+# else:
+# 	print('You didn"t shoot the alien')
+
+# # 5-6
+# age = 3
+
+# if age < 2:
+# 	print('The person is a baby.')
+# elif 2 <= age < 4:
+# 	print('The person is a toddler.')
+# elif 4 <= age < 13:
+# 	print('The person is a kid.')
+# elif 13 <= age < 20:
+# 	print('The person is a teenager.')
+# elif 20 <= age < 65:
+# 	print('The person is an adult.')
+# elif 65 <= age:
+# 	print('This person is an elder.')
+
+# # 5-7
+# favorite_fruits = ['bananas', 'mango', 'watermelon']
+
+# fruit = 'Watermelon'
+
+# if fruit.lower() in favorite_fruits:
+# 	print(f'I really love {fruit.upper()}.')
+# else:
+# 	print(f"I don't really like {fruit.title()}.")
