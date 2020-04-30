@@ -170,4 +170,163 @@
 #     else:
 #         print(f"{participants.title()}, please finish you poll!!!\n")
 ##########################################################################
-#start page 106
+# # Nesting
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 10}
+# alien_2 = {'color': 'red', 'points': 15}
+
+# aliens = [alien_0, alien_1, alien_2]
+
+# for alien in aliens:
+#     print(alien)
+
+# # Make an empty list for storing aliens
+# aliens = []
+
+#     # make 30 green aliens
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+
+#     # show the first five aliens
+
+# for alien in aliens[:5]:
+#     print(alien)
+# print('...')
+
+#     # show how many aliens have been created:
+# print(f"Number of aliens created: {len(aliens)}")
+
+#     # each alien might be the same but are considered a seperate object
+# for alien in aliens[:3]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['speed'] = 'medium'
+#         alien['points'] = 10
+#     elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['speed'] = 'fast'
+#         alien['points'] = 15
+
+# for alien in aliens[:5]:
+#     print(alien)
+########################################################
+# # A list inside a dictionary
+# # pizza.py
+# pizza = {'crust': 'thick', 'toppings': ['mushrooms', 'extra cheese']}
+
+#     # summarze the order
+# print(f"You ordered a {pizza['crust']}-crust pizza "
+#      "with the following topptings:")
+# for toppings in pizza['toppings']:
+#     print('\t'+toppings)
+
+# # favorite_languages.py
+# favorite_languages = {'jen': ['python', 'ruby'], 'sarah': ['c'],'edward': \
+#                     ['ruby', 'go'], 'phil': ['python', 'haskell'],}
+
+# for name, languages in favorite_languages.items():
+#     print(f"\n{name.title()}'s favorite languages are:")
+
+#     for language in languages:
+#         if len(languages) >= 2:
+#             print(f"\t{language.upper()}")
+#         else:
+#             print(f"\t{language.lower()}")
+################################################################
+# # A Dictionary in Dictionary
+# # many_users.py
+# users = {
+#     'aeinstein': {
+#     'first': 'albert',
+#     'last': 'einstein',
+#     'location': 'princeton',
+#     },
+#     'mcurie': {
+#     'first': 'marie',
+#     'last': 'curie',
+#     'location': 'paris',
+#     }
+# }
+
+# for username, user_info in users.items():
+#     print(f"\nUsername: {username}")
+#     full_name = f"{user_info['first'].title()} {user_info['last'].title()}"
+#     location = f"{user_info['location'].upper()}"
+
+#     print(f"Full Name: {full_name}")
+#     print(f"location: {location}")
+#####################################################################
+# # Try It Yourself
+# # 6-7 People:
+# person_1 = {
+#             'first_name': 'lamelo',
+#             'last_name': 'ball',
+#             'age': 19,
+#             'college': 'international',
+#             }
+# person_2 = {
+#             'first_name': 'james',
+#             'last_name': 'wiseman',
+#             'age': 19,
+#             'college': 'memphis',
+#             }
+# person_3 = {
+#             'first_name': 'ethan',
+#             'last_name': 'happ',
+#             'age': 21,
+#             'college': 'wisconsin',
+#             }
+# people = [person_1, person_2, person_3]
+
+# for person in people:
+#     print(f"{person['first_name'].title()} {person['last_name'].title()} \
+# is currently attending {person['college'].upper()}.")
+#     print(f"He is {person['age']} years old.")
+#####################################################################
+# # 6-8 Pets:
+
+# pet_1 = {
+#         'animal': 'dog',
+#         'owner_name': 'emily',
+#         }
+# pet_2 = {
+#         'animal': 'cat',
+#         'owner_name': 'matt',
+#         }
+
+# pet_3 = {'animal': 'hamster',
+#         'owner_name': 'richard'
+#         }
+# pets = [pet_1, pet_2, pet_3]
+
+# for pet in pets:
+#     print(f"The owner {pet['owner_name'].title()} has a pet {pet['animal']}.")
+################################################################################
+# # 6-9 Favorite Places:
+# favorite_places =   {
+#                     'max': ['tokyo', 'kyoto', 'seoul'],
+#                     'tim': ['kyoto', 'san francisco', 'new york'],
+#                     'ryan': ['melbourne'],
+#                      }
+
+# for name, places in favorite_places.items():
+#     print(f"\nThere are {name.title()}'s favorite places:")
+
+#     for place in places:
+#         (print(f"\t{place.upper()}"))
+################################################################################
+# # 6-10
+# jersey_numbers =   {
+#                     'lebron': [6, 23],
+#                     'garnett': [21, 5, 2],
+#                     'howard': [12, 8, 21, 39],
+#                      }
+
+# for name, numbers in jersey_numbers.items():
+#     print(f"\nThere are {name.title()}'s jersey numbers:")
+
+#     for num in numbers:
+#         (print(f"\t{num}"))
+################################################################################
+# complete 6-11 and 6-12
