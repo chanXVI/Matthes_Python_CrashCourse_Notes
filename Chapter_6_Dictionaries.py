@@ -329,4 +329,33 @@
 #     for num in numbers:
 #         (print(f"\t{num}"))
 ################################################################################
-# complete 6-11 and 6-12
+# # 6-11 Cities:
+# cities = {
+#     'pokhara': {
+#             'country': 'nepal',
+#             'population': 264_991,
+#             'fact': 'Pokhara is one of the best travel destinations in Nepal', 
+#             },
+#     'milwaukee': {
+#             'country': 'united states',
+#             'population': 592_025,
+#             'fact': 'Milwaukee is home to the worlds largest music\
+#  festival', 
+#              },
+#     'new york city': {
+#             'country': 'united states',
+#             'population': 8_399_000,
+#             'fact': 'New York City is the most populous city in the United Stat\
+# es',
+#             },
+#         }               
+
+# for city, some_facts in cities.items():
+#     print(f"{city.title()} is one of the three cities we have done our research\
+#  on today.\n")
+#     country = f"{some_facts['country'].title()}"
+#     population = f"{some_facts['population']}"
+#     fact = f"{some_facts['fact']}"
+
+#     print(f"This particular city is located in {country}. It has a population of\
+#  {population}. {fact}. \n")
