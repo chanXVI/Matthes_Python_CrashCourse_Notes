@@ -246,4 +246,172 @@
     
 #     print(catalog)
 # ##############################################################################
+# # Passing a list
+# def greet_users(names):
+#     """Print a simple greeting to each user in the list."""
+#     for name in names:
+#         msg = f"Hello, {name.title()}!"
+#         print(msg)
 
+# usernames = ['hannah', 'ty', 'margot']
+# greet_users(usernames)
+# ##############################################################################
+# # modifying a list without using functions
+# unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
+
+# while unprinted_designs:
+#     current_design = unprinted_designs.pop()
+#     print(f"Printing models: {current_design}")
+    
+#     completed_models.append(current_design)
+
+# print("\nThe following models have been printed:")
+# for completed_model in completed_models:
+#     print(completed_model)
+# # ##############################################################################
+# # modifying a list in a function using functions
+# def print_models(unprinted_designs, completed_models):
+#     """
+#     Simulate printing each design, until none are left.
+#     Move each design to completed models after printing
+#     """
+#     while unprinted_designs:
+#         current_design = unprinted_designs.pop()
+#         print(f"Printing models: {current_design}")
+#         completed_models.append(current_design)
+
+# def show_completed_models(completed_models):
+#     """Show all the models that were printed"""
+#     print("\nThe following models have been printed:")
+#     for completed_model in completed_models:
+#         print(completed_model)
+
+# unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
+# """ you can past the list with [:] extension in the funciton so it takes the
+# copy of that list and saves the original"""
+# print_models(unprinted_designs[:], completed_models)
+# show_completed_models(completed_models)
+# # the original is still intact because [:] was used when passing the list
+# print(unprinted_designs)
+# ##############################################################################
+# # try it yourself
+# # 8-9
+# def text_history(short_texts):
+#     """Prints out the texts within a list given as argument"""
+#     for text in short_texts:
+#         print(text)
+
+# short_texts = ['hi', 'hello', 'how are you?', 'bye', 'good morning']
+# text_history(short_texts)
+# ##############################################################################
+# # 8-10
+# short_texts = ['hi', 'hello', 'how are you?', 'bye', 'good morning']
+# sent_messages = []
+
+# def send_messages(message_sent, message_received):
+#     """
+#     prints out the messages being sent and moves the messages from send list to
+#     sent list
+#     """
+#     while message_sent:
+#         text = message_sent.pop()
+#         print(text)
+#         message_received.append(text)
+
+# send_messages(short_texts, sent_messages)
+# print('short texts =',short_texts)
+# print('sent messages =',sent_messages)
+# ##############################################################################
+# # 8-11
+# short_texts = ['hi', 'hello', 'how are you?', 'bye', 'good morning']
+# sent_messages = []
+
+# def send_messages(message_sent, message_received):
+#     """
+#     prints out the messages being sent and moves the messages from send list to
+#     sent list
+#     """
+#     while message_sent:
+#         text = message_sent.pop()
+#         print(text)
+#         message_received.append(text)
+
+# send_messages(short_texts[:], sent_messages)
+# print('short texts =',short_texts)
+# print('sent messages =',sent_messages)
+# ##############################################################################
+# # Passing an Arbitrary Number of Arguments
+# def make_pizza(*toppings):
+#     """Print the list of toppings that have been requested"""
+#     print(toppings)
+# make_pizza('pepperoni')
+# make_pizza('mushrooms', 'green peppers', 'extra cheese')
+# ##############################################################################
+# def make_pizza(*toppings):
+#     """Summarize the pizza we are about to make"""
+#     print("\nMaking a pizza with the following toppings:")
+#     for topping in toppings:
+#         print(f"- {topping}")
+
+# make_pizza('pepperoni')
+# make_pizza('mushrooms', 'green peppers', 'extra cheese')
+# ##############################################################################
+# def make_pizza(size, *toppings):
+#     """Summarize the pizza we are about to make"""
+#     print(f"\nMaking a {size}-inch pizza with the following toppings:")
+#     for topping in toppings:
+#         print(f"- {topping}")
+
+# make_pizza(16, 'pepperoni')
+# make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+# ##############################################################################
+# def build_profile(first, last, **user_info):
+#     """Build a dictionary containing everything we know about a user"""
+#     user_info['first_name'] = first.title()
+#     user_info['last_name'] = last.title()
+#     return user_info
+
+# user_profile = build_profile('albert', 'einstein', location = 'princeton',\
+# field = 'physics')
+
+# print(user_profile)
+# ##############################################################################
+# # Try it yourself
+# # 8-12
+# def sandwich_toppings(*toppings):
+#     """collects and prints out the toppings you want in your sandwich"""
+#     print("\nThe following toppings in your sandwich include:")
+#     for topping in toppings:
+#         print(f"- {topping.title()}")
+
+# sandwich_toppings('turkey', 'ham', 'lettuce', 'tomato', 'bacon', 'nine-grain\
+#  bread')
+# sandwich_toppings('tuna', 'mayo', 'lettuce', 'provolone', 'whole wheat')
+# ##############################################################################
+# # 8-13
+# def build_profile(first_name, last_name, **user_info):
+#     """Build a dictionary containing my personal info"""
+#     user_info['first_name'] = first_name.title()
+#     user_info['last_name'] = last_name.title()
+#     for key, value in user_info.items():
+#         print(f"{key}: {value}")
+#     return user_info
+
+# user_profile = build_profile('michael', 'jordan', year_born = 1963,\
+# Net_Worth = '2.1 billion')
+
+# print(user_profile)
+# ##############################################################################
+# # 8-14
+# def make_car(manufacturer, model_name, **car_info):
+#     car_info['manufacturer'] = manufacturer.title()
+#     car_info['model_name'] = model_name.upper()
+#     return car_info
+
+# car = make_car('toyota', 'prius', MPG = 54, color = 'Electric Blue',\
+# safety_rating = '*****')
+
+# print(car)
+# ##############################################################################
