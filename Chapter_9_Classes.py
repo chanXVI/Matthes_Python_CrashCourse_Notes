@@ -329,4 +329,312 @@
 
 # print(f"Today we served a total of {restaurant_1.number_served} customers.")
 # ##############################################################################
-# 9-5
+# # 9-5
+# class User:
+#     """Describing users"""
+#     def __init__(self, first_name, last_name, username):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.username = username
+#         self.email = first_name + '.' + last_name + '@gmail.com'
+#         self.login_attempts = 0
+
+
+#     def describe_user(self):
+#         print(f"The user's full name is {self.first_name.title()}\
+#  {self.last_name.title()}.")
+
+
+#     def greet_user(self):
+#         print(f"Hello {self.first_name.title()}!!!!!")
+
+
+#     def increment_login_attempts(self):
+#         self.login_attempts += 1
+
+
+#     def reset_login_attempts(self):
+#         self.login_attempts = 0
+
+
+
+# user_1 = User('josh', 'smith', 'jsmoove')
+# user_1.increment_login_attempts()
+# user_1.increment_login_attempts()
+# user_1.increment_login_attempts()
+# user_1.increment_login_attempts()
+
+# print(user_1.login_attempts)
+
+# user_1.reset_login_attempts()
+
+# print(user_1.login_attempts)
+# ##############################################################################
+# # Inheritance
+# class Car:
+#     """A simple attempt to represent a car."""
+
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+
+#     def get_descriptive_name(self):
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+    
+#     def update_odometer(self, mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")
+
+#     def increment_odometer(self, miles):
+#         self.odometer_reading += miles
+
+#     def gas_or_electric(self):
+#         print('This car runs on gas.')
+
+
+# class Battery:
+#     """A simple attempt to model a battery for an electric car"""
+
+#     def __init__(self, battery_size=75):
+#         """Initialize the battery's attributes."""
+#         self.battery_size = battery_size
+
+#     def describe_battery(self):
+#         """Print statement describing the battery status"""
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+#     def get_range(self):
+#         """Print a statement about the range this battery provides."""
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
+
+#         print(f"This car can go about {range} miles on a full charge.")
+
+
+# class ElectricCar(Car):
+#     """Represents aspects of a car, specific to electric vehicles"""
+
+#     def __init__(self, make, model, year):
+#         """
+#         Initialize attributes of the parent class.
+#         Then initialize attributes specific to an electric car.
+#         """
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
+
+
+#         # overriding method from parent class
+#     def gas_or_electric(self):
+#         """Answer whether the car runs on gas or not?"""
+#         print('This car runs on electricity.')
+
+
+# my_tesla = ElectricCar('tesla', 'model s', 2019)
+# print(my_tesla.get_descriptive_name())
+
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+# print('')
+# my_tesla.battery = Battery(100)
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+# ##############################################################################
+# # try it yourself
+
+# #9-6
+# class Restaurant:
+#   """A description of a restaurant"""
+
+#   def __init__(self, restaurant_name, cuisine_type):
+#       """the name of the restaurant and it's cuisine type"""
+#       self.restaurant_name = restaurant_name
+#       self.cuisine_type = cuisine_type
+#       self.number_served = 0
+
+
+#   def describe_restaurant(self):
+#       """two piece of information about restaurant"""
+#       print(f"{self.restaurant_name.title()} is located in the United States.")
+#       print(f"They offer dine-in, takeout and delivery.")
+
+
+#   def open_restaurant(self):
+#       """print a message indicating that the restaurant is open"""
+#       print(f"{self.restaurant_name.title()} is currently open.")
+
+
+#   def set_number_served(self, customers_served):
+#       self.number_served = customers_served
+
+#   def increment_number_served(self, customers_served_this_order):
+#       if customers_served_this_order >= 0:
+#           self.number_served += customers_served_this_order
+
+#       else:
+#           print("You can't serve a negative amount of customers")
+
+
+# class IceCreamStand(Restaurant):
+#     """subclass of parent class Restaurant"""
+
+#     def __init__(self, restaurant_name, cuisine_type, flavors=None):
+
+#         super().__init__(restaurant_name, cuisine_type)
+#         if flavors is None:
+#             self.flavors = []
+#         else:
+#             self.flavors = flavors
+
+#     def add_flavor(self, new_flavor):
+#         if new_flavor not in self.flavors:
+#             self.flavors.append(new_flavor)
+
+#     def display_flavors(self):
+#         for flavor in self.flavors:
+#             print('-->',flavor)
+
+
+# staple_flavor = ['vanilla', 'chocolate', 'strawberry']
+# ice_cream_1 = IceCreamStand('dairy queen', 'ice cream', staple_flavor)
+# ice_cream_1.add_flavor('napolean')
+
+# ice_cream_1.display_flavors()
+# ice_cream_1.describe_restaurant()
+# ##############################################################################
+# # 9-7
+# class User:
+#     """Describing users"""
+#     def __init__(self, first_name, last_name, username):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.username = username
+#         self.email = first_name + '.' + last_name + '@gmail.com'
+#         self.login_attempts = 0
+
+#     def describe_user(self):
+#         print(f"The user's full name is {self.first_name.title()}\
+#  {self.last_name.title()}.")
+
+#     def greet_user(self):
+#         print(f"Hello {self.first_name.title()}!!!!!")
+
+#     def increment_login_attempts(self):
+#         self.login_attempts += 1
+
+#     def reset_login_attempts(self):
+#         self.login_attempts = 0
+
+# # 9-8
+# class Privileges:
+#     def __init__(self, privileges=['can delete post','can ban user']):
+#         if privileges is None:
+#             self.privileges = []
+#         else:
+#             self.privileges = privileges
+
+#     def show_privileges(self):
+#         for privilege in self.privileges:
+#             print('-->',privilege)
+
+
+# class Admin(User):
+#     """sub class of Class User for Administrators"""
+
+#     def __init__(self, first_name, last_name, username):
+
+#         super().__init__(first_name, last_name, username)
+#         self.privileges = Privileges()
+
+    
+
+# admin_1 = Admin('micheal', 'scott', 'mike_sc')
+# print(admin_1.email)
+# admin_1.privileges.show_privileges()
+# ##############################################################################
+# # 9-9
+# class Car:
+#     """A simple attempt to represent a car."""
+
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+
+#     def get_descriptive_name(self):
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+    
+#     def update_odometer(self, mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")
+
+#     def increment_odometer(self, miles):
+#         self.odometer_reading += miles
+
+#     def gas_or_electric(self):
+#         print('This car runs on gas.')
+
+
+# class Battery:
+#     """A simple attempt to model a battery for an electric car"""
+   
+#     def __init__(self, battery_size=75):
+#         """Initialize the battery's attributes."""
+#         self.battery_size = battery_size
+
+#     def describe_battery(self):
+#         """Print statement describing the battery status"""
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+#     def get_range(self):
+#         """Print a statement about the range this battery provides."""
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
+
+#         print(f"This car can go about {range} miles on a full charge.")
+
+#     def upgrade_battery(self):
+#         self.battery_size = 100
+
+# class ElectricCar(Car):
+#     """Represents aspects of a car, specific to electric vehicles"""
+
+#     def __init__(self, make, model, year):
+#         """
+#         Initialize attributes of the parent class.
+#         Then initialize attributes specific to an electric car.
+#         """
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
+
+
+#         # overriding method from parent class
+#     def gas_or_electric(self):
+#         """Answer whether the car runs on gas or not?"""
+#         print('This car runs on electricity.')
+
+# car_1 = ElectricCar('tesla', 's', 2015)
+# car_1.battery.get_range()
+
+# car_1.battery.upgrade_battery()
+# car_1.battery.get_range()
+# ##############################################################################
+# Start page 174
