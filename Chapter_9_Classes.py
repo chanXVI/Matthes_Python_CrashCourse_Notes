@@ -637,4 +637,4 @@
 # car_1.battery.upgrade_battery()
 # car_1.battery.get_range()
 # ##############################################################################
-# Start page 174
+# the remaining try it yourself are in seperate modules
